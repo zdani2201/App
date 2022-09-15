@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MainPage"
+             BackgroundColor="#5DADE2 "> 
+
+    <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Label
+                       Text="Formulario de resgistro" VerticalOptions="Center" HorizontalOptions="Center" 
+                       TextColor="Black" FontSize="30"/>
+
+            </Grid>
+
+
+            <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="350" Orientation="Vertical"  >
+                
+                <!--Nombre-->
+                <Label Text="Nombre"
+                       FontSize="17"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+
+                <Frame
+                    HasShadow="true"
+                    Padding="10"
+                    CornerRadius="20">
+                    <Entry
+                    Placeholder="Digite su nombre"
+                    Keyboard="Text"
+                    MaxLength="50"
+                    FontSize="15"
+                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    />
+                </Frame>
+                
+                <!--Apellidos-->
+                <Label Text="Apellidos"
+                       FontSize="17"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+
+                <Frame
+                    HasShadow="true"
+                    Padding="10"
+                    CornerRadius="20">
+                    <Entry
+                    Placeholder="Digite sus apellidos"
+                    Keyboard="Text"
+                    MaxLength="50"
+                    FontSize="15"
+                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    />
+                </Frame>
+                
+                <!--Email-->
+                <Label Text="Email"
+                       FontSize="17"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+
+                <Frame
+                    HasShadow="true"
+                    Padding="10"
+                    CornerRadius="20">
+                    <Entry
+                    Placeholder="Ejemplo@gmail.com"
+                    Keyboard="Email"
+                    MaxLength="40"
+                    FontSize="15"
+                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    />
+                </Frame>
+                
+                <!--Contraseñas-->
+                <Label Text="Contraseña"
+                       FontSize="17"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+
+                <Frame
+                    HasShadow="true"
+                    Padding="10"
+                    CornerRadius="20">
+                    <Entry
+                    Placeholder="****************"
+                    Keyboard="Text"
+                    MaxLength="30"
+                    FontSize="15"
+                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    />
+                </Frame>
+
+                <Label Text="Confirmar Contraseña"
+                       FontSize="17"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
+
+                <Frame
+                    HasShadow="true"
+                    Padding="10"
+                    CornerRadius="20">
+                    <Entry
+                    Placeholder="****************"
+                    Keyboard="Text"
+                    MaxLength="30"
+                    FontSize="15"
+                    Text="{Binding EmailTxt, Mode=TwoWay}"
+                    IsEnabled="{Binding IsEnabledTxt}"
+                    />
+                </Frame>
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </ScrollView>
+
+</ContentPage>
